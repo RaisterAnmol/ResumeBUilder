@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="ats-card">
+
+    <h2>ATS Resume Score</h2>
+
+    <div class="gauge-box">
+
+        <svg viewBox="0 0 200 120" class="gauge">
+
+            <!-- background arc -->
+            <path d="M20 100 A80 80 0 0 1 180 100"
+                  class="gauge-bg"/>
+
+            <!-- progress arc -->
+            <path d="M20 100 A80 80 0 0 1 180 100"
+                  class="gauge-progress"
+                  id="gaugeProgress"/>
+
+            <!-- needle -->
+            <line x1="100" y1="100" x2="100" y2="30"
+                  id="needle"
+                  class="needle"/>
+
+            <!-- center circle -->
+            <circle cx="100" cy="100" r="6" class="center"/>
+
+        </svg>
+
+        <div class="score-text">
+            <span id="score">0</span>%
+            <p id="status">Analyzing...</p>
+        </div>
+
+    </div>
+
+</div>
+<script src="script.js"></script>
+</body>
+</html>

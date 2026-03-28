@@ -1,0 +1,128 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Segoe UI', sans-serif;
+}
+
+body{
+    min-height:100vh;
+    background:linear-gradient(135deg,#667eea,#764ba2);
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    padding:30px;
+}
+
+/* Premium main container */
+.login-card{
+    width:900px;
+    min-height:560px;
+    display:flex;
+    border-radius:24px;
+    overflow:hidden;
+    box-shadow:0 25px 60px rgba(0,0,0,0.25);
+    background:rgba(255,255,255,0.15);
+    backdrop-filter:blur(10px);
+}
+
+/* Left showcase panel */
+.left-panel{
+    width:45%;
+    background:rgba(255,255,255,0.12);
+    color:white;
+    padding:50px 40px;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+}
+
+.left-panel h1{
+    font-size:40px;
+    margin-bottom:15px;
+}
+
+.left-panel p{
+    font-size:16px;
+    line-height:1.6;
+    opacity:0.95;
+}
+
+/* Right login form */
+.right-panel{
+    width:55%;
+    background:white;
+    padding:60px 50px;
+    display:flex;
+    align-items:center;
+}
+
+.right-panel form{
+    width:100%;
+}
+
+form h2{
+    font-size:34px;
+    color:#111827;
+    margin-bottom:10px;
+}
+
+.subtitle{
+    color:#6b7280;
+    margin-bottom:25px;
+    font-size:15px;
+}
+
+input{
+    width:100%;
+    padding:16px;
+    margin-bottom:18px;
+    border:1px solid #d1d5db;
+    border-radius:12px;
+    font-size:15px;
+    outline:none;
+}
+
+input:focus{
+    border-color:#667eea;
+    box-shadow:0 0 6px rgba(102,126,234,0.3);
+}
+
+button{
+    width:100%;
+    padding:16px;
+    background:#667eea;
+    color:white;
+    border:none;
+    border-radius:12px;
+    font-size:17px;
+    font-weight:bold;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+button:hover{
+    background:#5a67d8;
+    transform:translateY(-1px);
+}
+
+.error{
+    background:#fee2e2;
+    color:#b91c1c;
+    padding:12px;
+    border-radius:8px;
+    margin-bottom:15px;
+    text-align:center;
+}
+
+.register-text{
+    margin-top:18px;
+    text-align:center;
+    font-size:14px;
+}
+
+.register-text a{
+    color:#667eea;
+    text-decoration:none;
+    font-weight:bold;
+}
